@@ -1,0 +1,50 @@
+@mixin background-fix{
+    background-attachment:fixed ;
+    background-size: cover;
+}
+
+
+@mixin position-1($l,$r,$t,$b){
+    position: absolute;
+    left: $l;
+    right: $r;
+    top:$t;
+    bottom:$b;
+}
+@mixin position-2($l,$r,$t,$b){
+    position:relative;
+    left: $l;
+    right: $r;
+    top:$t;
+    bottom:$b;
+}
+@mixin padding($l,$r,$t,$b){
+    left:$l ;
+    right:$r;
+    top:$t;
+    bottom:$b;
+}
+@mixin margins($lft,$rht,$top,$btm){
+    left:$lft;
+    right: $rht;
+    top:$tp;
+    bottom:$btm;
+}
+@mixin flex($justify,$wrap){
+     display:flex;
+     flex-wrap:$wrap;
+    justify-content:$justify;
+}
+   
+@mixin btn-style($f-size,$width,$height,$bdg-color,$color,$border){
+    font-style: 'Open Sans';
+    font-size:$f-size ;
+    font-weight:bold;
+    width: $width;
+    height: $height;
+    border-radius:30px ;
+    border:none ;
+    background-color:$bdg-color ;
+    color: $color;
+    border: $border;
+}
